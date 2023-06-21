@@ -5,8 +5,6 @@ def intersection(arr1, arr2, n, m):
 # n: length of arr1
 # m: length of arr2
 
-bash
-Copy code
 arr1.sort()  # Sort arr1 in ascending order
 arr2.sort()  # Sort arr2 in ascending order
 
