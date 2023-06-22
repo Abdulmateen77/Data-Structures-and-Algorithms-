@@ -10,6 +10,15 @@ def duplicateNumber(arr, n):
                 return arr[i]
             j += 1
 
+#optimize approach
+def findDuplicate(arr, n) :
+    #Your code goes here
+    seen = set()
+    for i in range(n):
+        if arr[i] in seen:
+            return arr[i]
+        seen.add(arr[i])
+
 # Main
 n = int(input())  # Number of elements in the array
 arr = list(int(i) for i in input().strip().split(' '))  # Array of integers
