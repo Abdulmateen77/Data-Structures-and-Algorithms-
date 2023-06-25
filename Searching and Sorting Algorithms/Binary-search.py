@@ -4,8 +4,6 @@ def binarySearch(arr: List[int], n: int, x: int) -> int:
 # n: length of the array
 # x: element to be searched
 
-sql
-Copy code
 start = 0
 end = n - 1
 
