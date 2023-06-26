@@ -3,8 +3,8 @@ def init(self, data):
 self.data = data
 self.next = None
 
-Function to calculate the length of a linked list
-head: the head node of the linked list
+#Function to calculate the length of a linked list
+#head: the head node of the linked list
 def length(head):
 """
 This function iterates through the linked list, counting the number of nodes,
