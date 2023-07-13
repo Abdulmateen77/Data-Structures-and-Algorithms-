@@ -9,13 +9,13 @@ def reverseQueue(inputQueue):
         return inputQueue
     
     # Get the front element of the queue
-    Element = inputQueue.get()
+    lastElement = inputQueue.get()
 
     # Reverse the remaining elements of the queue using recursion
     reverseQueue(inputQueue)
 
     # Put the front element at the end of the reversed queue
-    inputQueue.put(Element)
+    inputQueue.put(lastElement)
 
 
 
