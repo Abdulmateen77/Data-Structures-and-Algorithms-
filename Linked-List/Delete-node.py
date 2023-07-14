@@ -21,17 +21,17 @@ def deleteNode(head, pos):
 
     count = 0
     prev = None
-    curr = head
+    current = head
 
     while count < pos:
-        prev = curr
-        curr = curr.next
+        prev = current
+        current = current.next
         count += 1
 
     if prev is not None:
-        prev.next = curr.next
+        prev.next = current.next
     else:
-        head = curr.next
+        head = current.next
 
     return head
 
