@@ -10,12 +10,12 @@ def length(head):
 This function iterates through the linked list, counting the number of nodes,
 and returns the length of the linked list.
 """
-temp = head  # Start with the head node
+tempNode = head  # Start with the head node
 lengthLL = 0
 
 # Traverse the linked list until the end is reached (temp is None)
-while temp is not None:
+while tempNode is not None:
     lengthLL += 1  # Increment the length counter
-    temp = temp.next  # Move to the next node
+    tempNode = tempNode.next  # Move to the next node
 
 return lengthLL
