@@ -14,20 +14,20 @@ def deleteAlternateNodes(head):
         return head
     
     prev = head  # Variable to track the previous node
-    now = head.next  # Variable to track the current node
+    current = head.next  # Variable to track the current node
   
     # Traverse the linked list and delete alternate nodes
-    while prev is not None and now is not None: 
+    while prev is not None and current is not None: 
           
         # Change the next link of the previous node to skip the current node
-        prev.next = now.next
+        prev.next = current.next
   
         # Free the memory occupied by the current node
-        now = None
+        current = None
   
         # Update the prev and now pointers to the next pair of nodes
         prev = prev.next
         if prev is not None:
-            now = prev.next
+            current = prev.next
 
     return head
