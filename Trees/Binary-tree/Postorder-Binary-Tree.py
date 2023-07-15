@@ -12,7 +12,7 @@ class BinaryTreeNode:
 
 
 def postOrder(root):
-    # Function to perform pre-order traversal of a binary tree
+    # Function to perform post-order traversal of a binary tree
     # Your code goes here
     if root is None:
         return
