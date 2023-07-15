@@ -11,17 +11,17 @@ class BinaryTreeNode:
         self.right = None
 
 
-def preOrder(root):
+def postOrder(root):
     # Function to perform pre-order traversal of a binary tree
     # Your code goes here
     if root is None:
         return
     
     # Recursively traverse the left subtree
-    leftRoot = preOrder(root.left)
+    leftRoot = postOrder(root.left)
 
     # Recursively traverse the right subtree
-    rightRoot = preOrder(root.right)
+    rightRoot = postOrder(root.right)
 
     # Print the data of the current node
     print(root.data, end=" ")
@@ -69,5 +69,5 @@ def takeInput():
 # Main
 root = takeInput()
 
-# Perform pre-order traversal of the binary tree and print the nodes
-preOrder(root)
+# Perform post-order traversal of the binary tree and print the nodes
+postOrder(root)
