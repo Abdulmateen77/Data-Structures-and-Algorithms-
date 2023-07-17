@@ -4,19 +4,19 @@ def checkNumber(arr, x):
     if size == 0:
         return False
     
-    # If the first element of the array matches the target number, return True
+    # If the first element of the array matches the target number, return true
     elif arr[0] == x:
         return True
     
     # Recursively check if the target number exists in the smaller array
     smallarr = checkNumber(arr[:size-1], x)
     
-    # Return True if the target number was found in the smaller array or if the last element of the original array matches the target number
+    # Return true if the target number was found in the smaller array or if the last element of the original array matches the target number
     return smallarr or x == arr[size-1]
 
 # Main
 from sys import setrecursionlimit
-setrecursionlimit(11000)  # Increase recursion limit to handle large input
+setrecursionlimit(11000)  # Increase recursion limit to handle large inputs
 
 # Read input from the user
 n = int(input())  # Number of elements in the array
