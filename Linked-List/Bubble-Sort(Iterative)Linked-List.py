@@ -39,7 +39,7 @@ def bubbleSort(head):
 
     return head
 
-
+#function to take linked lists input
 def takeInput():
     head = None
     tail = None
