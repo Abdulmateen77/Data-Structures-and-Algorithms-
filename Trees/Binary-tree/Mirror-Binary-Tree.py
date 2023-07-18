@@ -14,7 +14,7 @@ class BinaryTreeNode:
 
 def mirrorBinaryTree(root):
     # Function to mirror a binary tree
-    if root is None:
+    if root == None:
         return
     
     # Swap the left and right children of the current root
