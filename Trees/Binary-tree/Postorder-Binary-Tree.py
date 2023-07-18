@@ -14,7 +14,7 @@ class BinaryTreeNode:
 def postOrder(root):
     # Function to perform post-order traversal of a binary tree
     # Your code goes here
-    if root is None:
+    if root == None:
         return
     
     # Recursively traverse the left subtree
