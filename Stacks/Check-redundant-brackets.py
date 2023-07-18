@@ -15,7 +15,7 @@ def checkRedundantBrackets(expression):
                 top = stack.pop()  # Continue popping elements until we find the opening bracket
 
             if isRedundant:
-                return True  # If the brackets are redundant, return True
+                return True  # If the brackets are redundant, return true
 
         else:
             stack.append(char)  # Push the character onto the stack
