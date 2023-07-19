@@ -34,14 +34,14 @@ def takeInput():
 
     length = len(levelOrder)
 
-    # Create the root node of the binary tree
+    # Create the root node of the Binary tree
     root = BinaryTreeNode(levelOrder[start])
     start += 1
 
     q = queue.Queue()
     q.put(root)
 
-    # Construct the binary tree using level-order traversal
+    # Construct the Binary tree using level-order traversal
     while not q.empty():
         currentNode = q.get()
 
@@ -55,7 +55,7 @@ def takeInput():
             q.put(leftNode)
 
         rightChild = levelOrder[start]
-        start += 1
+        start = start + 1
 
         # Create the right child node and link it to the current node
         if rightChild != -1:
