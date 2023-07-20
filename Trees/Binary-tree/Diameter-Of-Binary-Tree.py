@@ -45,7 +45,6 @@ def diameterOfBinaryTree(root):
     return 1 + max(h, leftroot, rightroot)
 
 
-
 """
     Time Complexity : O(N)
     Space Complexity : O(N)
@@ -54,13 +53,10 @@ def diameterOfBinaryTree(root):
 """
 
 def getDiameter(root, height):
-
-    if (root == None):
-    
+    if root == None:
         # Height and diameter of an empty tree will be 0.
         height[0] = 0
         return 0
-    
 
     # To store the height of left and right subtrees.
     leftHeight = [0]
@@ -75,16 +71,15 @@ def getDiameter(root, height):
     # Update the height of the given binary tree.
     height[0] = max(leftHeight[0], rightHeight[0]) + 1
 
-    # Diameter of given binary tree.
+    # Diameter of the given binary tree.
     diameter = max(leftDiameter, max(rightDiameter, leftHeight[0] + rightHeight[0]))
 
     return diameter
 
-
 def diameterOfBinaryTree(root):
-
-    # Initialize a variable to store the height of the of binary tree.
+    # Initialize a variable to store the height of the binary tree.
     height = [0]
 
     # Recursive function to find diameter.
     return 1 + getDiameter(root, height)
+
