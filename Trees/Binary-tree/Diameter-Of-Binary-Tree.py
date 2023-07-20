@@ -10,6 +10,7 @@ class BinaryTreeNode:
         self.left = None
         self.right = None
 
+### This Solution gives us the Time Complexity of O(N^2)###
 # Function to calculate the height of a binary tree starting from the given root
 def height(root):
     if root == None:
