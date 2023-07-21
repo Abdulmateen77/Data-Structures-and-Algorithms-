@@ -19,16 +19,16 @@ def insertDuplicateNode(root):
         return None
 
     # Create a new node with the data value same as the current root
-    newNode = BinaryTreeNode(root.data)
+    duplicateNode = BinaryTreeNode(root.data)
 
     # Link the new node to the left of the current root
-    newNode.left = root.left
+    duplicateNode.left = root.left
 
     # Link the left child of the current root to the new node
-    root.left = newNode
+    root.left = duplicateNode
 
     # Recursively insert duplicate nodes for left and right subtrees
-    insertDuplicateNode(newNode.left)  # Left subtree of the duplicate node
+    insertDuplicateNode(duplicateNode.left)  # Left subtree of the duplicate node
     insertDuplicateNode(root.right)    # Right subtree of the original root
 
     # Return the modified root
