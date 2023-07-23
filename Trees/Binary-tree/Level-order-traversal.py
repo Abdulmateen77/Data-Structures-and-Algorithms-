@@ -47,7 +47,7 @@ def takeInput():
     
     length = len(levelOrder)
 
-    # If there's only one element in the list, it represents an empty tree, so return None
+    # If there's only one element left in the list, it represents an empty tree, so return None
     if length == 1:
         return None
     
