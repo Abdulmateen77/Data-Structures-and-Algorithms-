@@ -4,7 +4,7 @@ import queue
 
 setrecursionlimit(10 ** 6)
 
-# Following is the structure used to represent the Binary Tree Node
+# Following is the structure used to represent the Binary tree Node
 class BinaryTreeNode:
     def __init__(self, data):
         self.data = data
@@ -12,7 +12,7 @@ class BinaryTreeNode:
         self.right = None
 
 def insertDuplicateNode(root):
-    # Function to insert a duplicate node for each node in the binary tree
+    # Function to insert a duplicate node for each node in the Binary tree
 
     # Base case: If the root is None, return None (empty tree)
     if root is None:
