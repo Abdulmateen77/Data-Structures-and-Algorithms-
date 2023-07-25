@@ -8,7 +8,7 @@ class BinaryTreeNode:
 
 def isNodePresent(root, x):
     # Function to check if a given node with value x exists in the tree.
-    # Returns True if found, False otherwise.
+    # Returns True if found, false otherwise.
     
     if root == None:
         return False
