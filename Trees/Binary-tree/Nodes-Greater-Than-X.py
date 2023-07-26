@@ -17,10 +17,10 @@ def countNodesGreaterThanX(root, x):
     if root is None:
         return 0
     
-    # Recursively count the number of nodes greater than x in the left subtree
+    # Recursively count the number of nodes greater than X in the left subtree
     leftCount = countNodesGreaterThanX(root.left, x)
     
-    # Recursively count the number of nodes greater than x in the right subtree
+    # Recursively count the number of nodes greater than X in the right subtree
     rightCount = countNodesGreaterThanX(root.right, x)
 
     # Check if the current node's data is greater than x
