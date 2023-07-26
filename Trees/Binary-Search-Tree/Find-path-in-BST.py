@@ -7,7 +7,7 @@ class BinaryTreeNode:
         self.right = None
 
 def findPathBST(root, data):
-    # Function to find the path from the root to the node with the given data in the Binary Search Tree (BST).
+    # Function to find the path from the root to the node with the given data in the Binary search tree (BST).
     # If the data is not found in the BST, it returns None.
     # The path is represented as a list of nodes' data in the order from the root to the target node.
     
