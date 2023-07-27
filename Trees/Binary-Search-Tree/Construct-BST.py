@@ -6,7 +6,7 @@ class TreeNode:
         self.right = None
 
 # Recursive function to construct a balanced binary search tree from a sorted input array
-def tree(input, s ,e ):
+def tree(input, s, e ):
     # Base case: If the start index (s) is greater than the end index (e), return None
     if s > e:
         return None
