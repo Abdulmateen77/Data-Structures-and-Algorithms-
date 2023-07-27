@@ -21,7 +21,7 @@ def searchInBST(root, k):
     elif root.data > k:
         return searchInBST(root.left, k)
     
-    # If the target 'k' is greater than the current node's data, search in the right subtree.
+    # If the target 'k' is greater than the current node's data, search in the right Subtree.
     else:
         return searchInBST(root.right, k)
 
@@ -51,7 +51,7 @@ def buildLevelTree(levelorder):
             q.put(rightNode)
     return root
 
-# Main
+# Main function
 levelOrder = [int(i) for i in input().strip().split()]
 root = buildLevelTree(levelOrder)
 k = int(input())
