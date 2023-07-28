@@ -86,7 +86,7 @@ def takeInput():
             currentNode.right = rightNode
             q.put(rightNode)
 
-    # Return the root node of the constructed binary tree
+    # Return the root node of the constructed Binary tree
     return root
 
 # Main function
