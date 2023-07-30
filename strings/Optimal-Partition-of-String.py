@@ -15,3 +15,23 @@ class Solution:
             count += 1   # If there are any remaining characters in the dictionary after the loop, add one more partition
 
         return count     # Return the total number of partitions
+
+def main():
+    # Test case 1
+    solution = Solution()
+    s1 = "abacab"
+    result1 = solution.partitionString(s1)
+    print(f"Number of partitions for '{s1}': {result1}")  # Expected output: 3
+
+    # Test case 2
+    s2 = "xyz"
+    result2 = solution.partitionString(s2)
+    print(f"Number of partitions for '{s2}': {result2}")  # Expected output: 3
+
+    # Test case 3
+    s3 = "aabaa"
+    result3 = solution.partitionString(s3)
+    print(f"Number of partitions for '{s3}': {result3}")  # Expected output: 2
+
+if __name__ == "__main__":
+    main()
