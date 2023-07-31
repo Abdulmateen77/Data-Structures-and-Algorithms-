@@ -1,3 +1,9 @@
+class TreeNode:
+  def __init__(self,data):
+    self.data = data
+    self.children = list()
+    
+
 
 def printTree(root):
   #Edge case not a base case
