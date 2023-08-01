@@ -6,6 +6,7 @@ class treeNode:
         self.children = []
 
 def printLevelWiseTree(root):
+    # Function to print the tree in level order traversal format
     if root is None:
         return
 
@@ -14,16 +15,21 @@ def printLevelWiseTree(root):
 
     while not q.empty():
         current = q.get()
+        # Print the data of the current node
         print(current.data, end=":")
+
+        # List to store the data of children of the current node
         children_data = []
         for i, child in enumerate(current.children):
             children_data.append(str(child.data))
+            # Add the children to the queue for further processing
             q.put(child)
 
+        # Print the data of children in comma-separated format
         print(",".join(children_data))
 
-
 def createLevelWiseTree(arr):
+    # Function to create a level-wise tree from the given array
     root = treeNode(int(arr[0]))
     q = [root]
     size = len(arr)
@@ -39,7 +45,7 @@ def createLevelWiseTree(arr):
         i += childCount
     return root
 
-# Main
+# Main function
 arr = list(input().strip().split(' '))
 tree = createLevelWiseTree(arr)
 printLevelWiseTree(tree)
