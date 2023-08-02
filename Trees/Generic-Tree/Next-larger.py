@@ -46,4 +46,18 @@ def createLevelWiseTree(arr):
             q.append(temp)
         i += childCount
     return root
+# Main code
+# Read input array and integer n
+arr = list(int(x) for x in stdin.readline().strip().split())
+n = int(input())
+
+# Create the level-wise tree
+tree = createLevelWiseTree(arr)
+
+# Find the next largest node
+result_node = nextLargest(tree, n)
+
+# Print the data of the next largest node if it exists
+if result_node:
+    print(result_node.data)
 
