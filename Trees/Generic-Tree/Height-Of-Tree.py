@@ -1,3 +1,4 @@
+sys.setrecursionlimit(10**6)
 # Import sys module to set the recursion limit
 import sys
 # Import stdin from sys module to read input
@@ -50,7 +51,6 @@ def createLevelWiseTree(arr):
 
 def main():
     # Set the recursion limit to handle large trees
-    sys.setrecursionlimit(10**6)
 
     # Read the input as a list of integers from the user
     arr = list(int(x) for x in stdin.readline().rstrip().rsplit())
