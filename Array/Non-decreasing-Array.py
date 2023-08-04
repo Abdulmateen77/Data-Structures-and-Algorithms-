@@ -11,6 +11,8 @@ class Solution:
                 count = 1  # Mark a change is made
             
         return True  # Return True if the array can be made non-decreasing
+
+
 def main():
     # Create an instance of the Solution class
     solution = Solution()
