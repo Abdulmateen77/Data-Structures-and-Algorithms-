@@ -10,7 +10,7 @@ class treeNode:
 
 # Function to replace node data with its depth in the tree
 def replacewithDepth(tree, d=0):
-    if tree is None:
+    if tree == None:
         return None
 
     # Replace node data with depth value
