@@ -1,8 +1,8 @@
 from sys import stdin, setrecursionlimit
-# Increase recursion limit to handle large trees
+# Increase recursion limit to handle large treed
 setrecursionlimit(10**6)
 
-# Definition of TreeNode class
+# Definition of treeNode class
 class treeNode:
     def __init__(self, data):
         self.data = data
