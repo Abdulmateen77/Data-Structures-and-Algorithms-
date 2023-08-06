@@ -3,9 +3,10 @@ from typing import List
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if not strs:
-            return ""  # If the list is empty, return an empty string
-
-        min_len = min(len(s) for s in strs)  # Find the minimum length among the strings
+            # If the list is empty, return an empty string
+            return ""
+    # Find the minimum length among the strings
+        min_len = min(len(s) for s in strs) 
         result = ""
 
         for i in range(min_len):
