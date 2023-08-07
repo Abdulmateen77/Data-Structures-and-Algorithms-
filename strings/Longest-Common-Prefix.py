@@ -6,14 +6,15 @@ class Solution:
     
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if not strs:
-            return ""
-
-        min_len = min(len(s) for s in strs)
+            return ""  # Return an empty string if the list is empty
+        
+        min_len = min(len(s) for s in strs)  # Find the minimum length among the strings
         result = ""
 
         for i in range(min_len):
-            current_char = strs[0][i]
+            current_char = strs[0][i]  # Get the current character from the first string
 
+            # Check if the current character is the same in all strings
             if all(s[i] == current_char for s in strs):
                 result += current_char
             else:
@@ -25,7 +26,7 @@ def main():
     # Create an instance of the Solution class
     solution = Solution()
     
-    # Test your longestCommonPrefix function
+    # Test your longestCommonPrefix function with a sample list of strings
     input_strs = ["flower", "flow", "flight"]
     result = solution.longestCommonPrefix(input_strs)
     print("Longest Common Prefix:", result)  # Expected output: "fl"
