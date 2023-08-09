@@ -1,27 +1,30 @@
 from sys import stdin
 
-def pairSum0(l,n):
-    sum=0
-    count=0
-    map={ }
+def pairSum0(l, n):
+    sum = 0
+    count = 0
+    map = {}  # Create a dictionary to store element frequencies
+    
     for i in range(n):
-        if sum-arr[i] in map:
-            count+=map[sum-arr[i]]
-        if arr[i] in map:
-            map[arr[i]]+=1
+        # Check if the complement of the current element (sum - l[i]) is in the map
+        if map and sum - l[i] in map:
+            count += map[sum - l[i]]  # Increment count by the frequency of the complement
+        
+        # Increment the frequency of the current element in the map
+        if l[i] in map:
+            map[l[i]] += 1
         else:
-            map[arr[i]]=1
+            map[l[i]] = 1
+    
     return count
 
+# Read input for the number of elements in the array
+n = int(input())
 
-    
-def takeInput():
-    #To take fast I/O
-    n=int(stdin.readline().strip())
-    if n==0:
-        return list(),0
-    arr=list(map(int,stdin.readline().strip().split( )))
-    return arr,n
+# Read input array elements
+arr = list(map(int, input().split()))
 
-arr,n=takeInput()
-print(pairSum0(arr,n))
+# Call the pairSum0 function and print the count of pairs with sum 0
+result = pairSum0(arr, n)
+print(result)
+
