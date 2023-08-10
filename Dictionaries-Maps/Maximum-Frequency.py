@@ -15,7 +15,7 @@ def maximumFreq(arr):
         if dict[num] > maximum:
             maximum = dict[num]
             maxNum = num
-    
+    #returns maximum frequency number in an array
     return maxNum
 
 # Read the input for the array size
