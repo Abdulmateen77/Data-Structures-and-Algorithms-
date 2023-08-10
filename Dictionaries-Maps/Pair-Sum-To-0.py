@@ -3,8 +3,8 @@ from sys import stdin
 def pairSum0(l, n):
     sum = 0
     count = 0
-    map = {}  # Create a dictionary to store element frequencies
-    
+    #Create a dictionary to store element frequencies
+    map = {}
     for i in range(n):
         # Check if the complement of the current element (sum - l[i]) is in the map
         if map and sum - l[i] in map:
