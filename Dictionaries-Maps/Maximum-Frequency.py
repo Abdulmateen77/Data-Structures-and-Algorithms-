@@ -1,3 +1,4 @@
+from sys import stdin
 # Function to find the number with maximum frequency in an array
 def maximumFreq(arr):
     dict = {}
