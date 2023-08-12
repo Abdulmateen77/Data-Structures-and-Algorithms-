@@ -41,3 +41,20 @@ class mao:
      head = head.next
    return None
     
+ def remove(self,key):
+   hc = hash(key)
+   index = self.getBucketIndex(hc)
+   head = self.bucket[index]
+   prev = None
+   while head is not None:
+     if head.key == key:
+       if prev is None:
+         self.bucket[index] = head.next
+       else:prev.next = head.next
+     self.count = 1
+     return head.value
+     prev = head
+     head = head.next
+   return None
+         
+       
