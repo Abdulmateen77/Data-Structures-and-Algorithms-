@@ -30,4 +30,14 @@ class mao:
     newNode.next = head
     self.bucket[index] = newNode
     self.count += 1
+
+ def getValue(self,key):
+   hc = hash(key)
+   index = self.getBucketIndex(hc)
+   head = self.bucket[index]
+   while head is not None:
+     if head.key == key:
+       return head.value
+     head = head.next
+   return None
     
