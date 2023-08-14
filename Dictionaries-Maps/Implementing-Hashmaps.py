@@ -18,18 +18,29 @@ class map:
     def getBucketIndex(self, hc):
         return (abs(hc) % self.bucket_size) # Compute the index of the bucket using the hash code
 
-    def rehash(self):
-        temp = self.bucket
-        self.bucket = [None for i in range(2 * self.bucketsize)]
-        self.bucketsize = 2 * self.bucketsize
-        self.count = 0
-        for head in temp:
-            while temp is not None:
-                self.insert(head.key, head.value)
-                head = head.next
+  def rehash(self):
+    # Store the current bucket array in a temporary variable
+    temp = self.bucket
+    
+    # Create a new bucket array with twice the size
+    self.bucket = [None for i in range(2 * self.bucketsize)]
+    
+    # Update the bucketsize to reflect the new size
+    self.bucketsize = 2 * self.bucketsize
+    
+    # Reset the count to zero for the new bucket array
+    self.count = 0
+    
+    # Iterate through the old bucket array and reinsert elements into the new array
+    for head in temp:
+        while head is not None:
+            # Reinsert the key-value pair into the new bucket array using insert method
+            self.insert(head.key, head.value)
+            head = head.next
 
-    def loadFactor(self):
-        return self.count / self.bucketsize
+def loadFactor(self):
+    # Calculate and return the load factor of the hashmap
+    return self.count / self.bucketsize
 
     
     def insert(self, key, value):
