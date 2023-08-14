@@ -59,3 +59,26 @@ class mao:
             prev = head
             head = head.next
         return None
+
+# Create an instance of the hashmap
+hash_map = mao()
+
+# Insert key-value pairs into the hashmap
+hash_map.insert("key1", "value1")
+hash_map.insert("key2", "value2")
+hash_map.insert("key3", "value3")
+
+# Get values using keys
+print(hash_map.getValue("key1"))  # Output: value1
+print(hash_map.getValue("key2"))  # Output: value2
+print(hash_map.getValue("key3"))  # Output: value3
+
+# Remove a key-value pair from the hashmap
+removed_value = hash_map.remove("key2")
+print("Removed:", removed_value)  # Output: Removed: value2
+
+# Try to get the value for the removed key
+print(hash_map.getValue("key2"))  # Output: None
+
+# Test the size of the hashmap
+print("Size:", hash_map.size())    # Output: Size: 2
