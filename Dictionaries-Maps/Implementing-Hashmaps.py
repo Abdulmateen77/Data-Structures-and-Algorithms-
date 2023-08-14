@@ -6,7 +6,7 @@ class mapNode:
         self.next = None
 
 # Define the hashmap class
-class mao:
+class map:
     def __init__(self):
         self.bucket_size = 10
         self.bucket = [None for i in range(self.bucket_size)] # Initialize a list of buckets
@@ -18,6 +18,20 @@ class mao:
     def getBucketIndex(self, hc):
         return (abs(hc) % self.bucket_size) # Compute the index of the bucket using the hash code
 
+    def rehash(self):
+        temp = self.bucket
+        self.bucket = [None for i in range(2 * self.bucketsize)]
+        self.bucketsize = 2 * self.bucketsize
+        self.count = 0
+        for head in temp:
+            while temp is not None:
+                self.insert(head.key, head.value)
+                head = head.next
+
+    def loadFactor(self):
+        return self.count / self.bucketsize
+
+    
     def insert(self, key, value):
         hc = hash(key)
         index = self.getBucketIndex(hc)
@@ -32,6 +46,9 @@ class mao:
         newNode.next = head # Attach the new node to the current head
         self.bucket[index] = newNode # Update the head to the new node
         self.count += 1
+        leadFactor = self.count / self.bucketsize
+        if loadFactor >= 0.7:
+            self.rehash()
 
     def getValue(self, key):
         hc = hash(key)
