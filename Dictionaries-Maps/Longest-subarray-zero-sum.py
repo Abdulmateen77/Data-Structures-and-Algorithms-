@@ -14,16 +14,18 @@ def subsetSum(l):
         cum_sum += l[i]       
 
         if cum_sum == 0:
-            max_length = i + 1  # If cumulative sum becomes zero, update the max_length
+            # If cumulative sum becomes zero, update the max_length
+            max_length = i + 1 
 
         elif cum_sum in dict:
             max_length = max(max_length, i - dict[cum_sum])
             # If cumulative sum is already in dict, update max_length if a longer subarray is found
 
         else:
-            dict[cum_sum] = i  # If cumulative sum is not in dict, add it with its index
-    
-    return max_length       # Return the maximum length of subarray with zero sum
+            # If cumulative sum is not in dict, add it with its index
+            dict[cum_sum] = i  
+    # Return the maximum length of subarray with zero sum
+    return max_length      
 
 
 # Main
