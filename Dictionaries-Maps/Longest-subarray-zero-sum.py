@@ -2,12 +2,16 @@ def subsetSum(l):
     # Length of the input list
     n = len(l)
     # Dictionary to store cumulative sums and their corresponding indices
-    dict = {}                
-    max_length = 0           # Variable to store the maximum length of subarray with zero sum
-    cum_sum = 0              # Variable to store the cumulative sum of elements
+    dict = {}
+    # Variable to store the maximum length of subarray with zero sum
+    max_length = 0
+    
+    # Variable to store the cumulative sum of elements
+    cum_sum = 0             
 
     for i in range(n):
-        cum_sum += l[i]       # Add the current element to the cumulative sum
+        # Add the current element to the cumulative sum
+        cum_sum += l[i]       
 
         if cum_sum == 0:
             max_length = i + 1  # If cumulative sum becomes zero, update the max_length
