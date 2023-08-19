@@ -84,7 +84,8 @@ while choice != -1:
     if choice == 1:
         element = curr_input[i]
         i += 1
-        myPq.insert(element, element)  # Insert the element into the priority queue
+        # Insert the element into the priority queue
+        myPq.insert(element, element)  
     elif choice == 2:
         print(myPq.getMin())  # Print the minimum element in the priority queue
     elif choice == 3:
