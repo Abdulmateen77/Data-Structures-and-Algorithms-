@@ -27,3 +27,20 @@ class Solution:
         
         # Return the longest palindrome found
         return longest
+
+
+def main():
+    # Create an instance of the Solution class
+    solution = Solution()
+
+    # Input string
+    input_str = "babad"
+
+    # Call the longestPalindrome method
+    longest_palindrome = solution.longestPalindrome(input_str)
+
+    # Print the result
+    print("Longest Palindrome:", longest_palindrome)
+
+if __name__ == "__main__":
+    main()
