@@ -1,4 +1,4 @@
-
+# Import the heapq module, which provides heap-related functions
 import heapq
 
 # Define a function 'kSmallest' to find the k smallest elements from a list
