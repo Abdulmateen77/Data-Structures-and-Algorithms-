@@ -4,13 +4,15 @@ def checkMaxHeap(lst):
 
     # Iterate through the list up to the second-to-last element
     for i in range(n - 1):
+        LeftIndex = 2*i + 1
+        rightIndex = leftIndex + 1
         # Check if the current element is greater than the next element
-        if lst[i] > lst[i + 1]:
-            continue  # If condition is met, continue to the next iteration
-        
-        else:
-            return False  # If condition is not met, the list is not a max-heap
-    
+        if leftIndex < n and  lst[leftIndex] > lst[i]:
+            return False
+
+        if rightIndex < n and lst[rightIndex] > lst[i]:
+            return False
+            
     return True  # If all conditions are met, the list is a max-heap
 
 # Main Code
