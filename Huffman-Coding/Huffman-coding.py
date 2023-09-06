@@ -95,22 +95,52 @@ class huffmanCoding:
         return array
 
     # Compress the input text and save it to a binary file
-    def Compress(self):
-        file_Name, File_extension = os.path.splitext(self.path)
-        output_path = file_Name + ".bin"
-        with open(self.path, "r+") as file, open(output_path, 'wb') as output:
-            text = file.read()
-            text = text.rstrip()
-            freq_dict = self._make_frequency_dict(text)
-            self.__buildHeap(freq_dict)
-            self.__buildTree()
-            self.__buildCode()
-            encodedText = self.__getEncodedText(text)
-            padded_encoded_text = self.__getPaddedEncodedText(encodedText)
-            bytes_array = self.__getBytesArray(padded_encoded_text)
-            final_bytes = bytes(bytes_array)
-            output.write(final_bytes)
-            print("compressed")
+def Compress(self):
+    # Extract the file name and extension from the provided path
+    file_Name, File_extension = os.path.splitext(self.path)
+    
+    # Define the output path for the compressed binary file
+    output_path = file_Name + ".bin"
+    
+    # Open the input text file for reading and the output binary file for writing
+    with open(self.path, "r+") as file, open(output_path, 'wb') as output:
+        # Read the content of the input text file into 'text' variable
+        text = file.read()
+        
+        # Remove trailing whitespace from the text
+        text = text.rstrip()
+        
+        # Create a frequency dictionary for the characters in the text
+        freq_dict = self._make_frequency_dict(text)
+        
+        # Build a priority queue (heap) from the frequency dictionary
+        self.__buildHeap(freq_dict)
+        
+        # Build the Huffman tree using the heap
+        self.__buildTree()
+        
+        # Generate Huffman codes for each character in the text
+        self.__buildCode()
+        
+        # Encode the input text using the generated Huffman codes
+        encodedText = self.__getEncodedText(text)
+        
+        # Add padding to the encoded text to ensure its length is a multiple of 8
+        padded_encoded_text = self.__getPaddedEncodedText(encodedText)
+        
+        # Convert the padded encoded text into a bytes array
+        bytes_array = self.__getBytesArray(padded_encoded_text)
+        
+        # Convert the bytes array into bytes and write it to the output binary file
+        final_bytes = bytes(bytes_array)
+        output.write(final_bytes)
+        
+        # Print a message indicating that compression is complete
+        print("compressed")
+        
+        # Return the path to the compressed binary file
+        return output_path
+
             return output_path
 
     # Helper function to remove padding from the encoded text
