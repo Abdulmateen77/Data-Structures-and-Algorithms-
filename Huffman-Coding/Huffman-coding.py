@@ -95,3 +95,81 @@ def __getBytesArray(self,padded_encoded_text):
         array.append(int(byte/2))
 
     return array
+
+
+def Compress(self):
+    file_Name, File_extension = os.path.splitext(self.path)
+    output_path = file_Name + ".bin"
+
+    with open(self.path, "r+") as file, open(output_path, 'wb') as output:
+        text = file.read()
+        text = text.rstrip()
+        freq_dict = self._make_frequency_dict(text)
+
+
+        self.__buildHeap(freq_dict)
+
+        self.__buildTree()
+
+        self.__buildCode()
+
+        endcodedText = self.__getEncodedText(text)
+
+        padded_encoded_text = self.__getPaddedEncodedText(encoded_text)
+
+        bytes_array = self.__getBytesArray(padded_encoded_text)
+
+        final_bytes = bytes(bytes_array)
+        output.write(final_bytes)
+
+        print("compressed")
+
+        return output_path
+
+    
+    def __removepadding(self,text):
+        padded_info = text[:8]
+
+        extra_padding = int(padded_info,2)
+        text = text[8:]
+
+        text_after_padding_remove = text[:-1*extra_padding]
+
+        return text_after_padding_remove
+
+    def __decodeText(self,text):
+
+        decoded_text = " "
+
+        curr_bits = " "
+
+        for bit in text:
+            curr_bits += bit
+            if curr_bits in self.__reverseCode:
+                character = self.__reverseCode[curr_bits]
+                decoded_text += character
+                curr_bits = " "
+            return __decodeText
+    
+    def decompression(self, input_path):
+
+        filename, File_extension = os.path.splitext(self.path)
+
+        output_path = filename + "_decompressed" +".txt"
+         with open(self.path, "rb+") as file, open(output_path, 'w') as output:
+            bit_string = " "
+            byte = file.read(1)
+            while byte:
+                byte = ord(byte)
+                bits = bin(byte) [2:].rjust(8,'0')
+                bit_string += bits
+                byte = file.read(1)
+            
+            actual_text = self.__removepadding(bit_string)
+
+            decompressed_text = self._decodedText(actual_text)
+
+            output.write(decompressed.txt)
+
+            return
+            
