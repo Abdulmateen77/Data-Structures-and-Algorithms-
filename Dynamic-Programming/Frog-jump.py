@@ -5,7 +5,7 @@ from typing import List
 dp = []
 
 # Recursive function to find the minimum cost to reach the end.
-def f(n: int, heights: List[int], N: int) -> int:
+def findMin(n: int, heights: List[int], N: int) -> int:
     global dp
 
     # Base case: If we have reached the end, return 0.
@@ -23,10 +23,10 @@ def f(n: int, heights: List[int], N: int) -> int:
     # Recursive cases:
     else:
         # Calculate the cost of jumping one step and add it to the result of the next step.
-        jump_one_step = f(n + 1, heights, N) + abs(heights[n - 1] - heights[n])
+        jump_one_step = findMin(n + 1, heights, N) + abs(heights[n - 1] - heights[n])
 
         # Calculate the cost of jumping two steps and add it to the result of the step after that.
-        jump_two_steps = f(n + 2, heights, N) + abs(heights[n - 1] - heights[n + 1])
+        jump_two_steps = findMin(n + 2, heights, N) + abs(heights[n - 1] - heights[n + 1])
 
         # Choose the minimum cost between jumping one step or two steps.
         dp[n] = min(jump_one_step, jump_two_steps)
@@ -42,4 +42,4 @@ def frogJump(n: int, heights: List[int]) -> int:
     dp = [-1] * (n + 1)
 
     # Start the recursion from the first step (index 1) and return the result.
-    return f(1, heights, n)
+    return findMin(1, heights, n)
