@@ -29,8 +29,11 @@ def countMinStepsToOne(n):
     return dp[n]
 
 # Main function
-n = int(stdin.readline().rstrip())  # Read the input 'n'
-result = countMinStepsToOne(n)      # Call the function to calculate minimum steps
-print(result)                        # Print the result
+# Read the input 'n'
+n = int(stdin.readline().rstrip())
+# Call the function to calculate minimum steps
+result = countMinStepsToOne(n)
+# Print the result
+print(result)                        
 
 # Note: The code reads 'n' from input, calculates the minimum steps, and prints the result.
