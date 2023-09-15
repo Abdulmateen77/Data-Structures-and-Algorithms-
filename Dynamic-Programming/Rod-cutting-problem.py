@@ -40,5 +40,4 @@ while t:
     print(cutRod(price, n))  # Calculate and print the maximum cost
     t = t - 1  # Decrement the number of test cases
 
-# Note: The code reads the number of test cases 't', and for each test case, it reads the price list and rod length,
 # calculates the maximum cost using the cutRod function, and prints the result.
