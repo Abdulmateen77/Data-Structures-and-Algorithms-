@@ -56,8 +56,6 @@ class Queue:
         return self.__head.data
 
 # This is the main function of the program. It takes input from the user and performs the corresponding operations on the queue.
-
-# Define a main function to handle input and execute queue operations
 def main():
     # Read the number of queries (q) from standard input
     q = int(stdin.readline().strip())
