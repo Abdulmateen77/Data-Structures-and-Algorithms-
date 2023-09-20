@@ -36,22 +36,29 @@ class Queue:
 
         self.__count += 1
 
-    # Removes the first element from the queue.
-    def dequeue(self):
-        if self.__count == 0:
-            return -1
+# Dequeue method: Removes and returns the front element from the queue.
+def dequeue(self):
+    # Check if the queue is empty (count is 0)
+    if self.__count == 0:
+        return -1  # Return -1 to indicate an empty queue
+    
+    # Store the data of the current front element to be removed
+    removedEle = self.__head.data
 
-        removedEle = self.__head.data
-        self.__head = self.__head.next
+    # Move the head pointer to the next element in the queue
+    self.__head = self.__head.next
 
-        self.__count -= 1
+    # Decrease the count of elements in the queue
+    self.__count -= 1
 
-        return removedEle
+    # Return the removed element
+    return removedEle
 
-    # Returns the first element in the queue.
-    def front(self):
-        if self.__count == 0:
-            return -1
+# Front method: Returns the data of the first element in the queue without removing it.
+def front(self):
+    # Check if the queue is empty (count is 0)
+    if self.__count == 0:
+        return -1  # Return -1 to indicate an empty queue
 
         return self.__head.data
 
