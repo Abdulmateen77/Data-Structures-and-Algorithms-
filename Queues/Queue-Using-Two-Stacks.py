@@ -32,17 +32,23 @@ class Queue:
         in the `stk1` stack. We then pop that element from the `stk1` stack 
         and return it.
         """
-        if len(self.stk1) == 0:
-            return -1
+# Check if the first stack (stk1) is empty, indicating an empty queue
+if len(self.stk1) == 0:
+    return -1  # Return -1 to indicate an empty queue
 
-        while len(self.stk1) != 1:
-            ele = self.stk1.pop()
-            self.stk2.append(ele)
+# Transfer all elements from stk1 to stk2, leaving one element in stk1
+while len(self.stk1) != 1:
+    ele = self.stk1.pop()
+    self.stk2.append(ele)
 
-        first = self.stk1.pop()
+# Pop the last element (the front element) from stk1
+first = self.stk1.pop()
 
-        while len(self.stk2) != 0:
-            ele = self.stk2.pop()
-            self.stk1.append(ele)
+# Transfer all elements from stk2 back to stk1, maintaining the queue order
+while len(self.stk2) != 0:
+    ele = self.stk2.pop()
+    self.stk1.append(ele)
 
-        return first
+# Return the dequeued (front) element
+return first
+
