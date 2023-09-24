@@ -10,7 +10,7 @@ def pairSum0(l, n):
         if map and sum - l[i] in map:
             count += map[sum - l[i]]  # Increment count by the frequency of the complement
         
-        # Increment the frequency of the current element in the map
+        # Increment the frequency of the current element in the map.
         if l[i] in map:
             map[l[i]] += 1
         else:
@@ -18,7 +18,7 @@ def pairSum0(l, n):
     
     return count
 
-# Read input for the number of elements in the array
+# Read input for the number of element in the array
 n = int(input())
 
 # Read input array elements
