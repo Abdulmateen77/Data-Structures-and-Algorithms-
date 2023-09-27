@@ -18,7 +18,9 @@ def checkMaxHeap(lst):
     return True  # If all conditions are met, the list is a max-heap
 
 # Main Code
-n = int(input())  # Input the total number of elements in the list
-lst = list(int(i) for i in input().strip().split(' '))  # Input the list elements
+# Input the total number of elements in the list
+n = int(input()) 
+ # Input the list elements
+lst = list(int(i) for i in input().strip().split(' ')) 
 # Check if the input list is a max-heap and print the result
 print('true') if checkMaxHeap(lst) else print('false')
