@@ -12,12 +12,17 @@ def kthLargest(lst, k):
             heapq.heappop(heap)  
             # Push the current number onto the heap
             heapq.heappush(heap, num)  
-    
-    return heap[0]  # Return the root (smallest element) of the heap, which is the kth largest element
+    # Return the root (smallest element) of the heap, which is the kth largest element
+    return heap[0] 
 
 # Main code
-n = int(input())  # Input the total number of elements in the list
-lst = list(int(i) for i in input().strip().split(' '))  # Input the list elements
-k = int(input())  # Input the value of k for finding the kth largest element
-ans = kthLargest(lst, k)  # Find the kth largest element using the function
-print(ans)  # Print the kth largest element
+# Input the total number of elements in the list
+n = int(input())  
+ # Input the list elements
+lst = list(int(i) for i in input().strip().split(' ')) 
+# Input the value of k for finding the kth largest element
+k = int(input())  
+# Find the kth largest element using the function
+ans = kthLargest(lst, k)
+#Print the kth largest element
+print(ans)
