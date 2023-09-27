@@ -6,9 +6,12 @@ def kthLargest(lst, k):
 
     # Iterate through the remaining elements
     for num in lst[k:]:
-        if num > heap[0]:  # If the current number is greater than the smallest element in the heap
-            heapq.heappop(heap)  # Remove the smallest element from the heap
-            heapq.heappush(heap, num)  # Push the current number onto the heap
+         # If the current number is greater than the smallest element in the heap
+        if num > heap[0]: 
+            # Remove the smallest element from the heap
+            heapq.heappop(heap)  
+            # Push the current number onto the heap
+            heapq.heappush(heap, num)  
     
     return heap[0]  # Return the root (smallest element) of the heap, which is the kth largest element
 
