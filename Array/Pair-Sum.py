@@ -22,10 +22,11 @@ num_dict = {}  # Dictionary to store the frequency of array elements
 count = 0  # Variable to store the count of pairs
 
 for i in range(n):
-    complement = num - arr[i]  # Calculate the complement of the current element
+    # Calculate the complement of the current element
+    complement = num - arr[i]  
     if complement in num_dict:
         # If the complement is present in the dictionary, increment the count by its frequency
         count += num_dict[complement]
-    num_dict[arr[i]] = num_dict.get(arr[i], 0) + 1  # Update the frequency of the current element
-
+    # Update the frequency of the current element
+    num_dict[arr[i]] = num_dict.get(arr[i], 0) + 1 
 return count
