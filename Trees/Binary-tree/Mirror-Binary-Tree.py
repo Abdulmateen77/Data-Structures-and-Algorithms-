@@ -66,7 +66,7 @@ def takeInput():
 
 
 def printLevelWise(root):
-    # Function to print the binary tree level-wise
+    #Function to print the binary tree level-wise
     if root is None:
         return
 
