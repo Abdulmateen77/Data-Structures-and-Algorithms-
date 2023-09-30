@@ -1,4 +1,4 @@
-#brute force approach
+#Brute force approach
 def duplicateNumber(arr, n):
     # Iterate through each element in the array
     for i in range(n):
@@ -11,7 +11,7 @@ def duplicateNumber(arr, n):
                 return arr[i]
             j += 1
 
-#optimize approach
+#Optimize approach
 def findDuplicate(arr, n) :
     seen = set() #initialise a set
     # Iterate through each element in the array
