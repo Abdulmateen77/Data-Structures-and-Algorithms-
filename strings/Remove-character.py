@@ -13,6 +13,8 @@ def removeAllOccurrencesOfChar(string, ch):
 string = stdin.readline().strip()  # Read the input string from standard input
 ch = stdin.readline().strip()  # Read the character to be removed from standard input
 
-ans = removeAllOccurrencesOfChar(string, ch)  # Call the removeAllOccurrencesOfChar function
+# Call the removeAllOccurrencesOfChar function
+ans = removeAllOccurrencesOfChar(string, ch)  
 
-print(ans)  # Print the modified string with the specified character removed
+# Print the modified string with the specified character removed
+print(ans) 
