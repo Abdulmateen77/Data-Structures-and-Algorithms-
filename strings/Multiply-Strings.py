@@ -13,3 +13,16 @@ class Solution:
 
         # Convert the product back to a string and return it using an f-string.
         return f"{productofStr}"
+
+
+# Test Case 1: Multiply two single-digit numbers
+result1 = solution.multiply("2", "3")
+print(result1)  # Expected output: "6"
+
+# Test Case 2: Multiply a single-digit number with a multi-digit number
+result2 = solution.multiply("9", "123")
+print(result2)  # Expected output: "1107"
+
+# Test Case 3: Multiply two multi-digit numbers
+result3 = solution.multiply("456", "789")
+print(result3)  # Expected output: "359784"
