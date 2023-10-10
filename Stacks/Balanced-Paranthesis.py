@@ -1,6 +1,5 @@
 from sys import stdin
 
-
 def isBalanced(expression):
     # Function to check if the given expression is balanced or not
     stack = []  # Stack to store opening brackets
