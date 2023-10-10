@@ -41,7 +41,6 @@ def takeInput():
 
     values = list(map(int, stdin.readline().strip().split(" ")))
     inputStack = values
-
     return inputStack
 
 # Main function
