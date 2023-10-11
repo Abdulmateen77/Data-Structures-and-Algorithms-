@@ -1,18 +1,18 @@
 from sys import stdin
 
 def checkRedundantBrackets(expression):
-    stack = []  # Initialize an empty stack to store the characters
+    stack = []  #Initialize an empty stack to store the characters
 
     for char in expression:
         if char == ')':
-            top = stack.pop()  # Pop the top element from the stack
+            top = stack.pop()  #Pop the top element from the stack
             isRedundant = True
 
             while top != '(':
                 if top in '+-*/':
-                    isRedundant = False  # If there is an operator between brackets, it is not redundant
+                    isRedundant = False  #If there is an operator between brackets, it is not redundant
 
-                top = stack.pop()  # Continue popping elements until we find the opening bracket
+                top = stack.pop()  #Continue popping elements until we find the opening bracket
 
             if isRedundant:
                 return True  # If the brackets are redundant, return true
