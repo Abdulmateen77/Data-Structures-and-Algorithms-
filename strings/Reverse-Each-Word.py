@@ -3,7 +3,7 @@ from sys import stdin
 def reverseWord(string, start, end):
     reverse = ""
     while start < end:
-        reverse = string[start] + reverse  # Build the reverse word character by character
+        reverse = string[start] + reverse  #Build the reverse word character by character
         start += 1
     return reverse
 
@@ -24,8 +24,8 @@ def reverseEachWord(string):
     return ans
 
 # Main
-string = stdin.readline().strip()  # Read the input string from standard input
+string = stdin.readline().strip()  #Read the input string from standard input
 
-ans = reverseEachWord(string)  # Call the reverseEachWord function to reverse each word in the string
+ans = reverseEachWord(string)  #Call the reverseEachWord function to reverse each word in the string
 
-print(ans)  # Print the reversed string with each word reversed
+print(ans)  #Print the reversed string with each word reversed
