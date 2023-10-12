@@ -1,7 +1,7 @@
 def minimumLengthWord():
-    str = input()  # Read the input string
+    str = input()  #Read the input string
 
-    min_len = len(str)  # Initialize the minimum length to the length of the input string
+    min_len = len(str)  #Initialize the minimum length to the length of the input string
     min_str = str  # Initialize the minimum string to the input string
 
     curr_str = " "  # Initialize the current word string
