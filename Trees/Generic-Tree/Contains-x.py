@@ -1,10 +1,10 @@
 from sys import stdin, setrecursionlimit
 import queue
 
-# Set recursion limit to handle large trees
+#Set recursion limit to handle large trees
 setrecursionlimit(10**6)
 
-# Definition of a tree node
+#Definition of a tree node
 class treeNode:
     def __init__(self, data):
         self.data = data
@@ -12,9 +12,9 @@ class treeNode:
     def __str__(self):
         return str(self.data)
 
-# Function to check if a tree contains a specific value x
+#Function to check if a tree contains a specific value x
 def containsX(tree, x):
-    # Base case: If tree is empty, return False
+    #Base case: If tree is empty, return False
     if tree == None:
         return False
     
