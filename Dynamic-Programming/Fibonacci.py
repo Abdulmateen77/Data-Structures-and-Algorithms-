@@ -1,13 +1,13 @@
-# Define a function to calculate the Fibonacci number at position 'n'
+#Define a function to calculate the Fibonacci number at position 'n'
 def fib(n):
-    # Base cases: Fibonacci numbers for n = 0 and n = -1
+    #Base cases: Fibonacci numbers for n = 0 and n = -1
     if n == 0 or n == -1:
         return n
-    # Check if the Fibonacci number for 'n' is already memoized
+    #Check if the Fibonacci number for 'n' is already memoized
     elif n != [-1]:
         return memo[n]
     else:
-        # Calculate the Fibonacci number for 'n' using recursion
+        #Calculate the Fibonacci number for 'n' using recursion
         memo[n] = fib(n - 1) + fib(n - 2)
         return memo
 
