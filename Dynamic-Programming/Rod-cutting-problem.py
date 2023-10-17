@@ -1,4 +1,4 @@
-# Import necessary modules
+#Import necessary modules
 from sys import stdin
 import sys
 
