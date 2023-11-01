@@ -1,10 +1,8 @@
 def uniqueChar(s):
     # Initialize an empty string to store the result
     result = ""
-
     # Create a set to keep track of characters that have been encountered
     seen = set()
-
     # Iterate through each character in the input string 's'
     for char in s:
         # Check if the character is not already encountered
