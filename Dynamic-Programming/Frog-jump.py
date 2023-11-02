@@ -4,19 +4,19 @@ from typing import List
 #Global array to store dynamic programming results.
 dp = []
 
-# Recursive function to find the minimum cost to reach the end.
+#Recursive function to find the minimum cost to reach the end.
 def findMin(n: int, heights: List[int], N: int) -> int:
     global dp
 
-    # Base case: If we have reached the end, return 0.
+    #Base case: If we have reached the end, return 0.
     if n == N:
         return 0
 
-    # Base case: If we are one step away from the end, return the absolute height difference.
+    #Base case: If we are one step away from the end, return the absolute height difference.
     elif n == N - 1:
         return abs(heights[N - 1] - heights[N - 2])
 
-    # If the result for the current step 'n' is already computed, return it.
+    #If the result for the current step 'n' is already computed, return it.
     if dp[n] != -1:
         return dp[n]
 
