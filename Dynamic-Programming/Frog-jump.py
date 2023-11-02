@@ -1,7 +1,7 @@
-# Import specific modules and types you need.
+#Import specific modules and types you need.
 from typing import List
 
-# Global array to store dynamic programming results.
+#Global array to store dynamic programming results.
 dp = []
 
 # Recursive function to find the minimum cost to reach the end.
