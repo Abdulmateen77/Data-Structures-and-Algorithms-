@@ -1,7 +1,7 @@
-# Import necessary modules
+#Import necessary modules
 import heapq, os
 
-# Define a BinaryTreeNode class for the Huffman tree nodes
+#Define a BinaryTreeNode class for the Huffman tree nodes
 class BinaryTreeNode:
     def __init__(self, value, freq):
         self.value = value
