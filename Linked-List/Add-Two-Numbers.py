@@ -1,7 +1,7 @@
-# Define a class Solution
+#Define a class Solution
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        # Create a dummyHead ListNode with value 0 to serve as the starting point of the result linked list
+        #Create a dummyHead ListNode with value 0 to serve as the starting point of the result linked list
         dummyHead = ListNode(0)
         tail = dummyHead  # Initialize a tail pointer to the dummyHead
         carry = 0  # Initialize the carry to 0 for addition
