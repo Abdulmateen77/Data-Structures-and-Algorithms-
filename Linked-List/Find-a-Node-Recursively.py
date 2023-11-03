@@ -1,14 +1,14 @@
 from sys import stdin, setrecursionlimit
 setrecursionlimit(10 ** 6)
 
-# Following is the Node class already written for the Linked List
+#Following is the Node class already written for the Linked List
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
 def findNodeRec(head, n):
-    # Recursive function to find the index of a node with value n in the linked list
+    #Recursive function to find the index of a node with value n in the linked list
     
     if head is None:
         return -1
