@@ -1,6 +1,6 @@
 from sys import stdin
 
-# Following is the Node class already written for the Linked List
+#Following is the Node class already written for the Linked List
 class Node:
     def __init__(self, data):
         self.data = data
@@ -8,7 +8,7 @@ class Node:
 
 
 def bubbleSort(head):
-    # If the list is empty or contains only one element, it is already sorted
+    #If the list is empty or contains only one element, it is already sorted
     if head is None or head.next is None:
         return head
 
@@ -18,7 +18,7 @@ def bubbleSort(head):
         previous = None
         current = head
 
-        # Iterate through the list
+        #Iterate through the list
         while current.next is not None:
             next_node = current.next
             if current.data > next_node.data:
