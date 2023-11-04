@@ -8,7 +8,7 @@ def highestOccuringChar(string):
     #Count the frequency of each character in the string
     for i in range(n):
         frequency[ord(string[i])] += 1  # Increment the frequency count for the character
-        maxFrequency = max(maxFrequency, frequency[ord(string[i])])  # Update the max frequency
+        maxFrequency = max(maxFrequency, frequency[ord(string[i])])  #Update the max frequency
 
     answer = '0'
     
