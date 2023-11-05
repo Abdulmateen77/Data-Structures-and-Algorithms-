@@ -1,10 +1,10 @@
 from sys import stdin
 
 def longestConsecutiveSubsequence(arr, n): 
-    # Function to find the longest consecutive subsequence within the array.
-    # It takes the array 'arr' of length 'n' as input.
+    #Function to find the longest consecutive subsequence within the array.
+    #It takes the array 'arr' of length 'n' as input.
 
-    # Create a set to efficiently check for presence of elements.
+    #Create a set to efficiently check for presence of elements.
     Numset = set(arr)
     
     # Initialize variables to store the starting and ending elements of the longest sequence.
