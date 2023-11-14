@@ -3,7 +3,7 @@ import queue
 
 class Stack:
 
-    # Define data members and __init__()
+    #Define data members and __init__()
     def __init__(self):
         # Initialize two queues, q1 and q2
         self.q1 = queue.Queue()
