@@ -1,11 +1,11 @@
-# Define a class to represent nodes in the hashmap
+#Define a class to represent nodes in the hashmap
 class mapNode:
     def __init__(self, key, value):
         self.key = key
         self.value = value
         self.next = None
 
-# Define the hashmap class
+#Define the hashmap class
 class map:
     def __init__(self):
         self.bucket_size = 10
