@@ -1,9 +1,9 @@
-# Initialize the function that calculates the minimum time to assemble a car
+#Initialize the function that calculates the minimum time to assemble a car
 def solution(A, B, X, Y):
-    # Get the number of cars to assemble
+    #Get the number of cars to assemble
     number_of_cars = len(A)
 
-    # Create a matrix to store the minimum time to reach each position on both lines
+    #Create a matrix to store the minimum time to reach each position on both lines
     dp = [[float('inf')] * 2 for _ in range(number_of_cars)]
 
     # Initialize the first position on both lines
