@@ -1,8 +1,8 @@
-# Set the recursion limit to handle large trees
+#Set the recursion limit to handle large trees
 sys.setrecursionlimit(10**6)
-# Import sys module to set the recursion limit
+#Import sys module to set the recursion limit
 import sys
-# Import stdin from sys module to read input
+#Import stdin from sys module to read input
 from sys import stdin
 
 # Definition of the TreeNode class representing a node in a generic tree
