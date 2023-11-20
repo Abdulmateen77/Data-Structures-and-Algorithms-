@@ -6,16 +6,16 @@ def solution(A, B, X, Y):
     #Create a matrix to store the minimum time to reach each position on both lines
     dp = [[float('inf')] * 2 for _ in range(number_of_cars)]
 
-    # Initialize the first position on both lines
+    #Initialize the first position on both lines
     dp[0][0] = A[0]
     dp[0][1] = B[0]
 
-    # Fill in the matrix based on the minimum time to reach each position
+    #Fill in the matrix based on the minimum time to reach each position
     for position in range(1, number_of_cars):
         dp[position][0] = min(dp[position-1][0] + A[position], dp[position-1][1] + A[position] + Y)
         dp[position][1] = min(dp[position-1][1] + B[position], dp[position-1][0] + B[position] + X)
 
-    # Return the minimum time to assemble the entire car
+    #Return the minimum time to assemble the entire car
     return min(dp[number_of_cars-1][0], dp[number_of_cars-1][1])
 
 # Examples:
