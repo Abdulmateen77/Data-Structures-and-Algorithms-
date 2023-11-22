@@ -1,10 +1,10 @@
 import sys
-# Set the maximum recursion depth to handle large trees
+#set the maximum recursion depth to handle large trees
 sys.setrecursionlimit(3000)
 
 from sys import stdin
 
-# TreeNode class to represent each node of the generic tree
+#TreeNode class to represent each node of the generic tree
 class treeNode:
     def __init__(self, data):
         self.data = data
