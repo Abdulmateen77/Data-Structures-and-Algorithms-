@@ -1,6 +1,6 @@
 from sys import stdin
 
-# Following is the structure of the node class for a Singly Linked List
+#Following is the structure of the node class for a Singly Linked List
 class Node:
     def __init__(self, data):
         self.data = data
@@ -8,7 +8,7 @@ class Node:
 
 
 class Stack:
-    # Define data members and __init__()
+    #Define data members and __init__()
     def __init__(self):
         self.__head = None
         self.__count = 0
@@ -16,11 +16,11 @@ class Stack:
     '''----------------- Public Functions of Stack -----------------'''
 
     def getSize(self):
-        # Implement the getSize() function
+        #Implement the getSize() function
         return self.__count
 
     def isEmpty(self):
-        # Implement the isEmpty() function
+        #Implement the isEmpty() function
         return self.getSize() == 0
 
     def push(self, element):
