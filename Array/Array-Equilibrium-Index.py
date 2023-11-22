@@ -1,5 +1,5 @@
 def arrayEquilibriumIndex(arr, n):
-# Function to find the equilibrium index of an array
+#Function to find the equilibrium index of an array
 # arr: input array
 # n: length of the array
 
