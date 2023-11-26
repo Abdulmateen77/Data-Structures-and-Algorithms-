@@ -1,15 +1,15 @@
-# Importing required modules
+#Importing required modules
 from sys import stdin  # Importing the stdin module to take input
 import sys  # Importing the sys module
 import heapq as heap  # Importing the heapq module and aliasing it as 'heap'
 
-# Class to define a node for a linked list
+#Class to define a node for a linked list
 class LinkedListNode:
     def __init__(self, data):
         self.data = data  # Initialize the node's data
         self.next = None  # Initialize the next pointer to None
         
-# Class to implement a Queue using linked list
+#Class to implement a Queue using linked list
 class Queue:
     def __init__(self):
         self.head = None  # Initialize the head of the queue to None
