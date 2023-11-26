@@ -16,7 +16,7 @@ class Queue:
         self.tail = None  # Initialize the tail of the queue to None
         self.size = 0  # Initialize the size of the queue to 0
         
-    # Enqueue a new element to the queue
+    #Enqueue a new element to the queue
     def enqueue(self, data):
         newNode = LinkedListNode(data)  # Create a new linked list node with the given data
         if self.head is None:
@@ -46,13 +46,13 @@ class Queue:
             return True  # Return True if the head is None, indicating an empty queue
         return False
     
-    # Peek at the front element of the queue
+    #Peek at the front element of the queue
     def peek(self):
         if self.head is None:
             return None  # Return None if the head is None
         return self.head.data  # Return the data of the head node
     
-# Function to simulate buying tickets with given priorities
+#Function to simulate buying tickets with given priorities
 def buyTicket(arr, n, k):
     priorityQueue = []  # Initialize an empty list to represent the priority queue
     
@@ -86,7 +86,7 @@ def buyTicket(arr, n, k):
     
     return time  # Return the total time taken to buy all tickets
 
-# Taking input using fast I/O
+#Taking input using fast I/O
 def takeInput():
     n = int(stdin.readline().strip())  # Input the number of elements
     if n == 0:
@@ -95,7 +95,7 @@ def takeInput():
     k = int(stdin.readline().strip())  # Input the value of k
     return n, arr, k
 
-# Main function
+#Main function
 sys.setrecursionlimit(10**6)  # Set the recursion limit
 n, arr, k = takeInput()  # Input n, arr, and k
 print(buyTicket(arr, n, k))  # Call the buyTicket function and print the result
