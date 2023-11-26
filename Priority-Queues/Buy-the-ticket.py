@@ -27,7 +27,7 @@ class Queue:
         self.size += 1  # Increase the size of the queue by 1
         return
         
-    # Dequeue an element from the queue
+    #Dequeue an element from the queue
     def dequeue(self):
         if self.head is None:
             return None  # If the queue is empty, return None
@@ -36,7 +36,7 @@ class Queue:
         self.size -= 1  # Decrease the size of the queue by 1
         return data
     
-    # Get the size of the queue
+    #Get the size of the queue
     def getSize(self):
         return self.size  # Return the size of the queue
 
