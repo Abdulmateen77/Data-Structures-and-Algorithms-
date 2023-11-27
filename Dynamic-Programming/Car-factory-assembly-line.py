@@ -25,10 +25,10 @@ result1 = solution([1, 6, 2], [3, 2, 5], 2, 1)
  #Test case where it is optimal to assemble the entire car on line A
 result2 = solution([2, 11, 4, 4], [9, 2, 5, 11], 8, 4)
 
-# Test case with a different set of parameters
+#Test case with a different set of parameters
 result3 = solution([1, 10, 1], [10, 1, 10], 1, 5)
 
-# Another test case with different parameters
+#Another test case with different parameters
 result4 = solution([8, 3, 3], [6, 1, 10], 4, 3)
 
 # Print the results of the test cases
