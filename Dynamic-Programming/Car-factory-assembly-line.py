@@ -18,11 +18,11 @@ def solution(A, B, X, Y):
     #Return the minimum time to assemble the entire car
     return min(dp[number_of_cars-1][0], dp[number_of_cars-1][1])
 
-# Examples:
-# Test case where assembly can start in line A, switching between lines when necessary
+#Examples:
+#Test case where assembly can start in line A, switching between lines when necessary
 result1 = solution([1, 6, 2], [3, 2, 5], 2, 1)
 
-# Test case where it is optimal to assemble the entire car on line A
+ #Test case where it is optimal to assemble the entire car on line A
 result2 = solution([2, 11, 4, 4], [9, 2, 5, 11], 8, 4)
 
 # Test case with a different set of parameters
