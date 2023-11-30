@@ -38,14 +38,14 @@ class Queue:
 
 #Dequeue method: Removes and returns the front element from the queue.
 def dequeue(self):
-    # Check if the queue is empty (count is 0)
+    #check if the queue is empty (count is 0)
     if self.__count == 0:
         return -1  # Return -1 to indicate an empty queue
     
-    # Store the data of the current front element to be removed
+    #Store the data of the current front element to be removed
     removedEle = self.__head.data
 
-    # Move the head pointer to the next element in the queue
+    #Move the head pointer to the next element in the queue
     self.__head = self.__head.next
 
     # Decrease the count of elements in the queue
