@@ -1,13 +1,13 @@
 from sys import stdin
 
-# This class defines the node structure for a singly linked list.
+#This class defines the node structure for a singly linked list.
 class Node:
 
     def __init__(self, data):
         self.data = data
         self.next = None
 
-# This class defines the queue data structure. It has methods for enqueueing, dequeuing, getting the front element, getting the size, and checking if the queue is empty.
+#This class defines the queue data structure. It has methods for enqueueing, dequeuing, getting the front element, getting the size, and checking if the queue is empty.
 class Queue:
 
     def __init__(self):
@@ -16,11 +16,11 @@ class Queue:
         self.__count = 0
         self.__front = 0
 
-    # Returns the size of the queue.
+    #Returns the size of the queue.
     def getSize(self):
         return self.__count
 
-    # Checks if the queue is empty.
+    #Checks if the queue is empty.
     def isEmpty(self):
         return self.getSize() == 0
 
