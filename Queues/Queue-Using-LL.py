@@ -24,7 +24,7 @@ class Queue:
     def isEmpty(self):
         return self.getSize() == 0
 
-    # Adds a new element to the queue.
+    #Adds a new element to the queue.
     def enqueue(self, data):
         newNode = Node(data)
         if self.__head == None:
@@ -36,7 +36,7 @@ class Queue:
 
         self.__count += 1
 
-# Dequeue method: Removes and returns the front element from the queue.
+#Dequeue method: Removes and returns the front element from the queue.
 def dequeue(self):
     # Check if the queue is empty (count is 0)
     if self.__count == 0:
