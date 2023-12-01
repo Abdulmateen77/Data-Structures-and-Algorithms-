@@ -8,7 +8,7 @@ def reverseKElements(inputQueue, k):
     
     stack = []  # Stack to temporarily store k elements from the front of the queue
 
-    # Retrieve k elements from the front of the queue and push them onto the stack
+    #Retrieve k elements from the front of the queue and push them onto the stack
     for i in range(k):
         stack.append(inputQueue.get())
 
