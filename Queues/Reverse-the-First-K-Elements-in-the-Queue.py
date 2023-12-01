@@ -12,7 +12,7 @@ def reverseKElements(inputQueue, k):
     for i in range(k):
         stack.append(inputQueue.get())
 
-    # Pop elements from the stack and enqueue them back into the input queue
+    #Pop elements from the stack and enqueue them back into the input queue
     while len(stack) != 0:
         inputQueue.put(stack.pop())
 
