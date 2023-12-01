@@ -2,7 +2,7 @@ from sys import stdin
 import queue
 
 def reverseKElements(inputQueue, k):
-    # Check if k is 0 or greater than queue size, return the input queue as it is
+    #Check if k is 0 or greater than queue size, return the input queue as it is
     if k == 0 or k > inputQueue.qsize():
         return inputQueue
     
