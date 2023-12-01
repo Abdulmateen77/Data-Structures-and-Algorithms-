@@ -54,7 +54,7 @@ def dequeue(self):
     # Return the removed element
     return removedEle
 
-# Front method: Returns the data of the first element in the queue without removing it.
+#Front method: Returns the data of the first element in the queue without removing it.
 def front(self):
     # Check if the queue is empty (count is 0)
     if self.__count == 0:
@@ -62,15 +62,15 @@ def front(self):
 
         return self.__head.data
 
-# This is the main function of the program. It takes input from the user and performs the corresponding operations on the queue.
+#This is the main function of the program. It takes input from the user and performs the corresponding operations on the queue.
 def main():
     # Read the number of queries (q) from standard input
     q = int(stdin.readline().strip())
 
-    # Create an empty queue using a custom Queue class (not shown in this code snippet)
+    #Create an empty queue using a custom Queue class (not shown in this code snippet)
     queue = Queue()
 
-    # Loop through the queries
+    #Loop through the queries
     while q > 0:
         # Read and split the input line into a list of strings
         inputs = stdin.readline().strip().split(" ")
