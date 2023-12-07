@@ -18,13 +18,13 @@ def pairSum0(l, n):
     
     return count
 
-# Read input for the number of element in the array
+#Read input for the number of element in the array
 n = int(input())
 
-# Read input array elements
+#Read input array elements
 arr = list(map(int, input().split()))
 
-# Call the pairSum0 function and print the count of pairs with sum 0
+#Call the pairSum0 function and print the count of pairs with sum 0
 result = pairSum0(arr, n)
 print(result)
 
