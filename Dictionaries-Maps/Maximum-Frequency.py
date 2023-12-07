@@ -1,7 +1,7 @@
-# Import the sys module to use stdin for input
+#Import the sys module to use stdin for input
 from sys import stdin
 
-# Function to find the number with the maximum frequency in an array
+ #Function to find the number with the maximum frequency in an array
 def maximumFreq(arr):
     # Create an empty dictionary to store number frequencies
     dict = {}
