@@ -1,9 +1,9 @@
 def intersection(arr1, arr2, n, m):
-# Function to find the intersection of two sorted arrays
-# arr1: first sorted array
-# arr2: second sorted array
-# n: length of arr1
-# m: length of arr2
+#Function to find the intersection of two sorted arrays
+#arr1: first sorted array
+#arr2: second sorted array
+#n: length of arr1
+#m: length of arr2
 
 arr1.sort()  # Sort arr1 in ascending order
 arr2.sort()  # Sort arr2 in ascending order
