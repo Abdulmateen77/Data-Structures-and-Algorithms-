@@ -20,8 +20,8 @@ while index < n:
         # If the right sum and left sum are equal, return the current index
         return index
     else:
-        # Update the left sum and move to the next index
+        #Update the left sum and move to the next index
         leftSum += arr[index]
         index += 1
 
-return -1  # Return -1 if no equilibrium index is found
+return -1  #Return -1 if no equilibrium index is found
