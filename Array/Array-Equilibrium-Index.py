@@ -5,14 +5,14 @@ def arrayEquilibriumIndex(arr, n):
 
 totalSum = 0  # Variable to store the total sum of array elements
 
-# Calculate the total sum of array elements
+#Calculate the total sum of array elements
 for i in range(n):
     totalSum += arr[i]
 
 leftSum = 0  # Variable to store the left sum of elements
 index = 0  # Variable to store the current index
 
-# Iterate through the array to find the equilibrium index
+#Iterate through the array to find the equilibrium index
 while index < n:
     rightSum = totalSum - leftSum - arr[index]
     
