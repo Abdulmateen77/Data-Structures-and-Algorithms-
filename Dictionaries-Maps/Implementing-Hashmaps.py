@@ -19,10 +19,10 @@ class map:
         return (abs(hc) % self.bucket_size) # Compute the index of the bucket using the hash code
 
   def rehash(self):
-    # Store the current bucket array in a temporary variable
+    #Store the current bucket array in a temporary variable
     temp = self.bucket
     
-    # Create a new bucket array with twice the size
+    #Create a new bucket array with twice the size
     self.bucket = [None for i in range(2 * self.bucketsize)]
     
     #Update the bucketsize to reflect the new size
