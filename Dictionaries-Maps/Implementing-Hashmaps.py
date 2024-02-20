@@ -25,21 +25,21 @@ class map:
     # Create a new bucket array with twice the size
     self.bucket = [None for i in range(2 * self.bucketsize)]
     
-    # Update the bucketsize to reflect the new size
+    #Update the bucketsize to reflect the new size
     self.bucketsize = 2 * self.bucketsize
     
-    # Reset the count to zero for the new bucket array
+    #Reset the count to zero for the new bucket array
     self.count = 0
     
-    # Iterate through the old bucket array and reinsert elements into the new array
+    #Iterate through the old bucket array and reinsert elements into the new array
     for head in temp:
         while head is not None:
-            # Reinsert the key-value pair into the new bucket array using insert method
+            #Reinsert the key-value pair into the new bucket array using insert method
             self.insert(head.key, head.value)
             head = head.next
 
 def loadFactor(self):
-    # Calculate and return the load factor of the hashmap
+    #Calculate and return the load factor of the hashmap
     return self.count / self.bucketsize
 
     
