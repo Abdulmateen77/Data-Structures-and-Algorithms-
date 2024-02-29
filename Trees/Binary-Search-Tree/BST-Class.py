@@ -128,7 +128,7 @@ class BST:
         return deleted
     
     def count(self):
-        # Function to get the total number of nodes in the binary search tree (BST).
+        #Function to get the total number of nodes in the binary search tree (BST).
         return self.numNodes
         
 b = BST()
