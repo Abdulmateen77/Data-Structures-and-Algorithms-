@@ -5,6 +5,7 @@
 # from collections import *
 # from math import *
 
+
 def countDistinctWays(nStairs: int) -> int:
     # Define a modulo constant for handling large numbers
     mod = 1000000007
