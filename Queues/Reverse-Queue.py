@@ -1,5 +1,6 @@
 from sys import stdin, setrecursionlimit
 import queue
+
 setrecursionlimit(10 ** 6)
 
 def reverseQueue(inputQueue):
@@ -15,8 +16,6 @@ def reverseQueue(inputQueue):
 
     # Put the front element at the end of the reversed queue
     inputQueue.put(lastElement)
-
-
 
 
 
