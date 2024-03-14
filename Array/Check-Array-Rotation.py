@@ -15,12 +15,12 @@ arr1 = [1, 2, 3, 4, 5]
 n1 = len(arr1)
 print(arrayRotateCheck(arr1, n1))  # Expected output: 0 (No rotation)
 
-# Test case 2: Array with rotation at the beginning
+#Test case 2: Array with rotation at the beginning
 arr2 = [4, 5, 1, 2, 3]
 n2 = len(arr2)
 print(arrayRotateCheck(arr2, n2))  # Expected output: 2 (Rotation at index 2)
 
-# Test case 3: Array with rotation in the middle
+#Test case 3: Array with rotation in the middle
 arr3 = [3, 4, 5, 1, 2]
 n3 = len(arr3)
 print(arrayRotateCheck(arr3, n3))  # Expected output: 3 (Rotation at index 3)
