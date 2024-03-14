@@ -25,12 +25,12 @@ arr3 = [3, 4, 5, 1, 2]
 n3 = len(arr3)
 print(arrayRotateCheck(arr3, n3))  # Expected output: 3 (Rotation at index 3)
 
-# Test case 4: Array with rotation at the end
+#Test case 4: Array with rotation at the end
 arr4 = [2, 3, 4, 5, 1]
 n4 = len(arr4)
 print(arrayRotateCheck(arr4, n4))  # Expected output: 4 (Rotation at index 4)
 
-# Test case 5: Array with a single element
+#Test case 5: Array with a single element
 arr5 = [42]
 n5 = len(arr5)
 print(arrayRotateCheck(arr5, n5))  # Expected output: 0 (No rotation)
