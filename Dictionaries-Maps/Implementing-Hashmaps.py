@@ -1,11 +1,11 @@
-#Define a class to represent nodes in the hashmap
+# Define a class to represent nodes in the hashmap
 class mapNode:
     def __init__(self, key, value):
         self.key = key
         self.value = value
         self.next = None
 
-#Define the hashmap class
+# Define the hashmap class
 class map:
     def __init__(self):
         self.bucket_size = 10
@@ -19,7 +19,7 @@ class map:
         return (abs(hc) % self.bucket_size) # Compute the index of the bucket using the hash code
 
   def rehash(self):
-    #Store the current bucket array in a temporary variable
+    # Store the current bucket array in a temporary variable
     temp = self.bucket
     
     # Create a new bucket array with twice the size
