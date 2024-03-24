@@ -39,7 +39,7 @@ class map:
             head = head.next
 
 def loadFactor(self):
-    #Calculate and return the load factor of the hashmap
+    # Calculate and return the load factor of the hashmap
     return self.count / self.bucketsize
 
     
