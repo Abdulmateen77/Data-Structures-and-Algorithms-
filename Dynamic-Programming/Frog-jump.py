@@ -37,8 +37,8 @@ def findMin(n: int, heights: List[int], N: int) -> int:
 def frogJump(n: int, heights: List[int]) -> int:
     global dp
 
-    # Initialize the dynamic programming array with -1 values.
+    #Initialize the dynamic programming array with -1 values.
     dp = [-1] * (n + 1)
 
-    # Start the recursion from the first step (index 1) and return the result.
+    #Start the recursion from the first step (index 1) and return the result.
     return findMin(1, heights, n)
