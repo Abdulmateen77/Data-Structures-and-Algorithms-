@@ -7,7 +7,7 @@
 
 
 def countDistinctWays(nStairs: int) -> int:
-    # Define a modulo constant for handling large numbers
+    #Define a modulo constant for handling large numbers
     mod = 1000000007
 
     # Create an array 'dp' of length '2' with initial values '1'.
