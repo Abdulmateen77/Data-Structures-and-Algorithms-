@@ -1,9 +1,9 @@
-# Import specific modules you need, rather than using wildcard imports.
-# These modules are not used in this code, so you can remove these import statements.
-# from os import *
-# from sys import *
-# from collections import *
-# from math import *
+#Import specific modules you need, rather than using wildcard imports.
+#These modules are not used in this code, so you can remove these import statements.
+#from os import *
+#from sys import *
+#from collections import *
+#from math import *
 
 
 def countDistinctWays(nStairs: int) -> int:
