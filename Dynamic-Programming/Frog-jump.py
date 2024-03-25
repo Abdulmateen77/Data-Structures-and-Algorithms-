@@ -19,21 +19,21 @@ def findMin(n: int, heights: List[int], N: int) -> int:
     if dp[n] != -1:
         return dp[n]
 
-    # Recursive cases:
+    #Recursive cases:
     else:
-        # Calculate the cost of jumping one step and add it to the result of the next step.
+        #Calculate the cost of jumping one step and add it to the result of the next step.
         jump_one_step = findMin(n + 1, heights, N) + abs(heights[n - 1] - heights[n])
 
-        # Calculate the cost of jumping two steps and add it to the result of the step after that.
+        #Calculate the cost of jumping two steps and add it to the result of the step after that.
         jump_two_steps = findMin(n + 2, heights, N) + abs(heights[n - 1] - heights[n + 1])
 
-        # Choose the minimum cost between jumping one step or two steps.
+        #Choose the minimum cost between jumping one step or two steps.
         dp[n] = min(jump_one_step, jump_two_steps)
 
-        # Return the minimum cost for reaching the end from this step.
+        #Return the minimum cost for reaching the end from this step.
         return dp[n]
 
-# Main function to calculate the minimum cost for the frog to reach the end.
+#Main function to calculate the minimum cost for the frog to reach the end.
 def frogJump(n: int, heights: List[int]) -> int:
     global dp
 
