@@ -8,8 +8,8 @@ def intersection(arr1, arr2, n, m):
 arr1.sort()  # Sort arr1 in ascending order
 arr2.sort()  # Sort arr2 in ascending order
 
-i = 0  # Pointer for arr1
-j = 0  # Pointer for arr2
+i = 0  #Pointer for arr1
+j = 0  #Pointer for arr2
 
 while i < n and j < m:
     if arr1[i] < arr2[j]:
