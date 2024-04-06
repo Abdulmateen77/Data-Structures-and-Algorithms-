@@ -1,7 +1,7 @@
 def arrayEquilibriumIndex(arr, n):
 #Function to find the equilibrium index of an array
-# arr: input array
-# n: length of the array
+#arr: input array
+#n: length of the array
 
 totalSum = 0  # Variable to store the total sum of array elements
 
