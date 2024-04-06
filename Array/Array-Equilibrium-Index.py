@@ -17,7 +17,7 @@ while index < n:
     rightSum = totalSum - leftSum - arr[index]
     
     if rightSum == leftSum:
-        # If the right sum and left sum are equal, return the current index
+        #If the right sum and left sum are equal, return the current index
         return index
     else:
         #Update the left sum and move to the next index
