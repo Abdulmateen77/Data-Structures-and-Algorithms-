@@ -17,6 +17,7 @@ def pairSum(arr, n, num):
 # n: length of the array
 # num: target sum
 
+
 num_dict = {}  # Dictionary to store the frequency of array elements
 count = 0  # Variable to store the count of pairs
 
