@@ -12,7 +12,6 @@ def pairSum(arr, n, x):
 
 
 #Optimal Approach
-
 def pairSum(arr, n, num):
 # Function to count the number of pairs with a given sum in an array
 # arr: input array
