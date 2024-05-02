@@ -10,6 +10,7 @@ def pairSum(arr, n, x):
                 count += 1  # Increment the count if a pair is found
     return count  # Return the count of pairs
 
+
 #Optimal Approach
 
 def pairSum(arr, n, num):
