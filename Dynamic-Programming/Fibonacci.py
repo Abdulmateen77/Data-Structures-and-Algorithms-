@@ -11,7 +11,6 @@ def fib(n):
         memo[n] = fib(n - 1) + fib(n - 2)
         return memo
 
-
 # Check if the script is run as the main program
 if __name__ == "__main__":
     # Get user input for the position 'n' of the desired Fibonacci number
