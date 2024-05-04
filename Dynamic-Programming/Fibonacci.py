@@ -1,4 +1,5 @@
 #Define a function to calculate the Fibonacci number at position 'n'
+
 def fib(n):
     #Base cases: Fibonacci numbers for n = 0 and n = -1
     if n == 0 or n == -1:
@@ -10,6 +11,7 @@ def fib(n):
         #Calculate the Fibonacci number for 'n' using recursion
         memo[n] = fib(n - 1) + fib(n - 2)
         return memo
+
 
 # Check if the script is run as the main program
 if __name__ == "__main__":
