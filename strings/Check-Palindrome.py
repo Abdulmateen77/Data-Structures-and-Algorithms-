@@ -1,7 +1,6 @@
 # Import the sys module to access standard input (stdin)
 from sys import stdin
 
-
 # Define a function called isPalindrome that checks if a given string is a palindrome
 def isPalindrome(string):
     left = 0               # Initialize a variable 'left' to point to the first character of the string
