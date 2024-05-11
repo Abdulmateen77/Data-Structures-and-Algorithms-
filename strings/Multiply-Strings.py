@@ -15,6 +15,7 @@ class Solution:
         return f"{productofStr}"
 
 
+
 # Test Case 1: Multiply two single-digit numbers
 result1 = solution.multiply("2", "3")
 print(result1)  # Expected output: "6"
