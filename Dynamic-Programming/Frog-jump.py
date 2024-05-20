@@ -33,6 +33,7 @@ def findMin(n: int, heights: List[int], N: int) -> int:
         #Return the minimum cost for reaching the end from this step.
         return dp[n]
 
+
 #Main function to calculate the minimum cost for the frog to reach the end.
 def frogJump(n: int, heights: List[int]) -> int:
     global dp
