@@ -3,7 +3,6 @@ from typing import List
 
 #Global array to store dynamic programming results.
 dp = []
-
 #Recursive function to find the minimum cost to reach the end.
 def findMin(n: int, heights: List[int], N: int) -> int:
     global dp
