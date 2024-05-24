@@ -12,7 +12,7 @@ function includes(array, searchElement) {
   return false;
 }
 
-// Test cases
+//Test cases
 
 // Test case 1: Search for an existing number in an array
 const numbers = [1, 2, 3];
