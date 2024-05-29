@@ -88,6 +88,7 @@ def loadFactor(self):
             head = head.next
         return None
 
+
 #Create an instance of the hashmap
 hash_map = mao()
 
