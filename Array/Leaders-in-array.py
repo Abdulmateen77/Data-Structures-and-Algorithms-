@@ -9,3 +9,4 @@ def leaders(arr, N):
             leader_list.append(max_so_far)  # Add the current element to the leader list
     leader_list.reverse()  # Reverse the leader list to get the correct order
     return leader_list  # Return the list of leaders
+
