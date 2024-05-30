@@ -10,3 +10,4 @@ def leaders(arr, N):
     leader_list.reverse()  # Reverse the leader list to get the correct order
     return leader_list  # Return the list of leaders
 
+
