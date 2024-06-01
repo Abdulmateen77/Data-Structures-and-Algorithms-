@@ -15,6 +15,7 @@ def uniqueChar(s):
     # Return the resulting string containing unique characters
     return result
 
+
 # Main 
 # Read input from the user
 s = input()
