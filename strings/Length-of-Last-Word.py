@@ -1,7 +1,9 @@
 class Solution:
+    
     def lengthOfLastWord(self, s: str) -> int:
         #Function to calculate the length of the last word in a string.
 
+        
         last = 0  #Variable to store the length of the last word.
         s = s.strip()  #Remove leading and trailing whitespaces from the string.
         i = len(s) - 1  #Start from the last character of the string.
