@@ -6,8 +6,6 @@ class Node:
         self.data = data
         self.next = None
 
-
-
 def skipMdeleteN(head, M, N):
     # If the linked list is empty or has only one node, return the head
     if head is None or head.next is None:
