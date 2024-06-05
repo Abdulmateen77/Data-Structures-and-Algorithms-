@@ -61,7 +61,6 @@ def takeInput():
 
     return head
 
-
 def printLinkedList(head):
     # Traverse the linked list and print the values
     while head is not None:
