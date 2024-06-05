@@ -6,7 +6,6 @@ class Node:
         self.data = data
         self.next = None
 
-
 def bubbleSort(head):
     #If the list is empty or contains only one element, it is already sorted
     if head is None or head.next is None:
