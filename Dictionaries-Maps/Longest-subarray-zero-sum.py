@@ -3,7 +3,7 @@ def subsetSum(l):
     n = len(l)
     # Dictionary to store cumulative sums and their corresponding indices
     dict = {}
-    
+
     # Variable to store the maximum length of subarray with zero sum
     max_length = 0
     
