@@ -29,7 +29,6 @@ def subsetSum(l):
     return max_length      
 
 
-
 # Main
 n = int(input())           # Input the size of the list
 l = list(map(int, input().strip().split()))  # Input the list elements
