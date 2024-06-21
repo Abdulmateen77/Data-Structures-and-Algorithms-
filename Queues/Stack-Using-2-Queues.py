@@ -1,7 +1,6 @@
 from sys import stdin
 import queue
 
-
 class Stack:
 
     #Define data members and __init__()
