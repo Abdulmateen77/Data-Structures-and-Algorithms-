@@ -3,7 +3,6 @@ def arrayEquilibriumIndex(arr, n):
 #arr: input array
 #n: length of the array
 
-
 totalSum = 0  # Variable to store the total sum of array elements
 
 #Calculate the total sum of array elements
