@@ -2,6 +2,7 @@ from sys import stdin
 import queue
 
 class Stack:
+    
     #Define data members and __init__()
     def __init__(self):
         # Initialize two queues, q1 and q2
