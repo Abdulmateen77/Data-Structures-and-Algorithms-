@@ -1,6 +1,5 @@
 #Define a function to calculate the Fibonacci number at position 'n'
 
-
 def fib(n):
 
     #Base cases: Fibonacci numbers for n = 0 and n = -1
