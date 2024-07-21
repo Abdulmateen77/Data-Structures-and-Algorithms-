@@ -10,6 +10,7 @@ class Stack:
         self.q2 = queue.Queue()
 
     '''----------------- Public Functions of Stack -----------------'''
+    
 
     def getSize(self):
         # Implement the getSize() function
