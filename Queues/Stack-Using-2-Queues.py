@@ -11,7 +11,6 @@ class Stack:
 
     '''----------------- Public Functions of Stack -----------------'''
     
-
     def getSize(self):
         # Implement the getSize() function
         # Returns the number of elements in the stack
