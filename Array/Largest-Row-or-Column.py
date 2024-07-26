@@ -7,7 +7,7 @@ def findLargest(arr, nRows, mCols):
     row = -1
     col = -1
 
-    # Find the largest row sum
+    #Find the largest row sum
     for i in range(nRows):
         row_sum = 0
         for j in range(mCols):
@@ -16,7 +16,7 @@ def findLargest(arr, nRows, mCols):
             Max_Row = row_sum
             row = i
     
-    # Find the largest column sum
+    #Find the largest column sum
     for j in range(mCols):
         col_sum = 0
         for i in range(nRows):
