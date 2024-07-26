@@ -33,7 +33,7 @@ def findLargest(arr, nRows, mCols):
     else:
         print("column", col, Max_Col)
 
-# Function to take input for 2D matrix
+#Function to take input for 2D matrix
 def take2DInput():
     li = stdin.readline().rstrip().split(" ")
     nRows = int(li[0])
