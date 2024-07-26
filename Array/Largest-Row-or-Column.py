@@ -25,7 +25,7 @@ def findLargest(arr, nRows, mCols):
             Max_Col = col_sum
             col = j
 
-    # Compare the maximum row sum with the maximum column sum
+    #Compare the maximum row sum with the maximum column sum
     if Max_Row == float("-inf") and Max_Col == float("-inf"):
         print("row 0 -2147483648")
     elif Max_Row >= Max_Col:
