@@ -4,6 +4,7 @@ class mapNode:
         self.key = key
         self.value = value
         self.next = None
+        
 # Define the hashmap class
 class map:
     def __init__(self):
