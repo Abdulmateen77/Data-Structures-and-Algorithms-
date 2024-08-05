@@ -12,7 +12,7 @@ def uniqueChar(s):
             # Add the character to the set to mark it as seen
             seen.add(char)
     
-    # Return the resulting string containing unique characters
+    #Return the resulting string containing unique characters
     return result
 
 
