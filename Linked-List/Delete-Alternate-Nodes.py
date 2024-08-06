@@ -4,7 +4,6 @@ class Node:
         self.data = data
         self.next = None
 
-
 def deleteAlternateNodes(head):
     # Function to delete alternate nodes in a linked list
     # Write your code here
