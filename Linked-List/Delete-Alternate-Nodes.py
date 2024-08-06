@@ -1,4 +1,4 @@
-# Following is the node structure
+#Following is the node structure
 class Node:
     def __init__(self, data):
         self.data = data
