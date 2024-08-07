@@ -9,6 +9,7 @@ def arrayRotateCheck(arr, n):
     
     #If no rotation is found, return 0 (no rotation)
     return 0
+    
 #Test case 1: Array with no rotation
 arr1 = [1, 2, 3, 4, 5]
 n1 = len(arr1)
