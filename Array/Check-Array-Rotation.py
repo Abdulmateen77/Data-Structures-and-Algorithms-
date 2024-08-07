@@ -1,4 +1,4 @@
-#Function to check for rotation in an array
+# Function to check for rotation in an array
 def arrayRotateCheck(arr, n):
     # Iterate through the array elements up to the second-to-last element
     for i in range(0, n - 1):
