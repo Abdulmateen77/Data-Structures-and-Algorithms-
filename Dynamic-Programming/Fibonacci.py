@@ -19,6 +19,7 @@ if __name__ == "__main__":
     
     # Create a memoization table with -1 values for positions 0 to n-2
     memo = [-1] * (n - 1)
+
     
     # Print the nth Fibonacci number by calling the 'fib' function
     print("Nth fib number is: " + str(fib(n)))
