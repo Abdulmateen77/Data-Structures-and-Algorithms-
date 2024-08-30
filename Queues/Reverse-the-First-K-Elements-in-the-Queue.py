@@ -22,7 +22,6 @@ def reverseKElements(inputQueue, k):
     
     return inputQueue
 
-
 '''-------------- Utility Functions --------------'''
 
 # Takes a list as a stack and returns whether the stack is empty or not
