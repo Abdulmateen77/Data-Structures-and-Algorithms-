@@ -9,7 +9,6 @@ class Stack:
         self.q1 = queue.Queue()
         self.q2 = queue.Queue()
 
-    
     '''----------------- Public Functions of Stack -----------------'''
     
     def getSize(self):
