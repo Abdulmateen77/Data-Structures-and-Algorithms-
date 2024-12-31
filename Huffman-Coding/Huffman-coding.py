@@ -15,6 +15,7 @@ class BinaryTreeNode:
     def __eq__(self, other):
         return self.freq == other.freq
 
+
 # Define the Huffman Coding class
 class huffmanCoding:
     def __init__(self, path):
